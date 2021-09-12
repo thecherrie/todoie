@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper {
+  display: grid;
+  margin: 30px auto;
+  width: 90%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 3fr 1fr;
+  }
+}

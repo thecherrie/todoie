@@ -1,0 +1,87 @@
+.newItemForm {
+    z-index: 2;
+    transform: translate(-50%, -50%); 
+    padding: 30px 15px;
+    position: absolute;
+    background: #410F6B;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 38px 1px rgba(0,0,0,0.35);
+}
+
+#textArea {
+    font-family: sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: #350A5D;
+    padding: 20px;
+    color: white;
+    border: none;
+    height: 150px;
+    resize: none;
+}
+
+#tagsArea {
+    display: flex;
+    font-family: sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #350A5D;
+    padding: 20px;
+    color: white;
+    border: none;
+    resize: none;
+}
+
+.tagsContainer {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.tag {
+    border-radius: 10px;
+    z-index: 1;
+    background: #7A6097;
+    padding: 10px;
+    bottom: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .newItemForm {
+        transition: 0.5s ease;
+        width: 70%;
+    }
+
+    #textArea {
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .newItemForm {
+        padding: 40px;
+        transition: 0.5s ease;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .newItemForm {
+        transition: 0.5s ease;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .newItemForm {
+        transition: 0.5s ease;
+        width: 35%;
+    }
+}
