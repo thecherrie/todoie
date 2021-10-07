@@ -11,7 +11,7 @@ ul {
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 li {
@@ -23,4 +23,32 @@ li {
 .active {
     border-top: #FE5762 solid 3px;
     background: #410F6B;
+}
+
+.menuBarProfileContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuBarProfileContainer div {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    ul {
+        transition: .3s ease;
+        padding: 0 70px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .menuBarProfileContainer {
+        width: 100%;
+    }
+
+    .menuBarProfileContainer div {
+        display: block;
+    }
 }

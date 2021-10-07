@@ -57,7 +57,7 @@ class NewItemForm extends React.Component {
                 <div>
                     <form ref={this.windowRef} className="newItemForm" onSubmit={this.submitFormData}>
                         <h1>New Item</h1>
-                        <input onChange={() => this.setState({ error: "" })} placeholder="Title" name="itemTitle" id="input" autoComplete="off" />
+                        <input autoFocus="true" onChange={() => this.setState({ error: "" })} placeholder="Title" name="itemTitle" id="input" autoComplete="off" />
                         <textarea placeholder="Description" name="itemDescription" id="textArea"></textarea>
                         <input autoComplete="off" placeholder="Comma separated tags (optional)" name="itemTags" onKeyDown={this.createTags} contentEditable="true" id="tagsArea" className="" />
                         <span style={errorStyling}>{this.state.error}</span>
