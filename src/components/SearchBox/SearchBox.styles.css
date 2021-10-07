@@ -8,3 +8,7 @@ input {
     color: white;
     font-size: 15px;
 }
+
+input::placeholder {
+    color: #8D69B1;
+}

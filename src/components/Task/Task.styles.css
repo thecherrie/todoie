@@ -1,9 +1,21 @@
 .task {
     position: relative;
-    background: #7A6097;
+
+    background: rgba(122, 96, 151, 0.6);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    backdrop-filter: blur(12px);
     padding: 20px;
     border-radius: 15px;
     aspect-ratio: 1;
+}
+
+.task:hover {
+    transition: .3s ease;
+    box-shadow: 0px 0px 38px 1px rgba(0,0,0,0.20);
 }
 
 h3 {
@@ -27,11 +39,29 @@ h1 {
 }
 
 .taskTag {
+    cursor:pointer;
     margin-right: 10px;
     margin-bottom: 10px;
     background: #3F9FF8;
     color: white;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0px 0px 38px 1px rgba(0,0,0,0.10);
+}
+
+.taskCompleteButton {
+    transition: .3s ease;
+}
+
+#tickIcon {
+    margin-left: -15px;
+    transition: .1s ease;
+    opacity: 0;
+}
+
+.taskCompleteButton:hover > #tickIcon {
+    opacity: 1;
+    margin-left: 5px;
+    transition: .3s ease;
     box-shadow: 0px 0px 38px 1px rgba(0,0,0,0.10);
 }

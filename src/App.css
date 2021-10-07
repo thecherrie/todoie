@@ -48,8 +48,30 @@
   grid-template-columns: 1fr;
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.mainFooter {
+  top: 30px;
+  position: relative;
+  bottom: 0;
+  background: #350A5D;
+  padding: 60px;
+  text-align: center;
+}
+
+.mainFooter h2 {
+  color: white;
+  font-weight: 500;
+}
+
 @media only screen and (min-width: 1200px) {
   .wrapper {
     grid-template-columns: 3fr 1fr;
+  }
+
+  .tasksContentWrapper {
+    margin-right: 40px;
   }
 }

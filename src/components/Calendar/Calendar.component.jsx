@@ -22,7 +22,7 @@ class Calendar extends React.Component {
                     {
                         this.props.tasks.map(task => {
                             return <CalendarItem 
-                                time="9:00am"
+                                time={task.time}
                                 title={task.title}
                                 description={task.description}
                                 colour="lightsalmon"

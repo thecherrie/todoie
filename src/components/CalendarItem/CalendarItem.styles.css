@@ -1,7 +1,12 @@
 .calendarItem {
+    opacity: .7;
     margin-top: 5px;
     align-items: center;
     display: flex;
+}
+
+.calendarItem:hover {
+    opacity: 1;
 }
 
 .calendarItemDivider {

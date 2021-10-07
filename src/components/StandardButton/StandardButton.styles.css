@@ -9,7 +9,3 @@ button {
     font-weight: bold;
 
 }
-
-button:hover {
-    box-shadow: 0px 0px 26px -10px #FE5762;
-}
